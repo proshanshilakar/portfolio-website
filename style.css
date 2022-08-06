@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
     --hg:rgb(245, 241, 11);
-    scroll-behavior: smooth;
     
 }
 #preloader{
@@ -96,10 +95,23 @@ background: #333;
      background-repeat: no-repeat;
 
 }*/
+
+.container
+{
+    height: 100vh;
+    width: auto;   
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+}
 section{
     overflow: hidden;
     padding: 100px;
     min-height: 100vh;
+    scroll-snap-align: start;
+    
+    
 }
 .banner{
     position: relative;
